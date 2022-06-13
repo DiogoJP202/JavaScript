@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formantando String</title>
+    <style>
+        h1#nome{
+            color: red;
+        }
+        h1#azul{
+            color: blue;
+        }
+        h1#rosa{
+            color: rgb(255, 0, 179);
+        }
+    </style>
+</head>
+<body>
+    <h1>Formantando String</h1>
+    <p>Olá MUNDO!</p>
+    <script>
+       var nome=(window.prompt('Coloque Seu nome: '))
+       document.write(`<h1 id="nome"> Seu nome, <strong>${nome}</strong>, tem ${nome.length} letras.</h1>`) 
+       document.write(`<h1 id="azul">Seu nome em Maiúsculo fica ${nome.toUpperCase()}</h1>`)
+       document.write(`<h1 id="rosa">Seu nome em Minúsculo fica ${nome.toLowerCase()}</h1>`)
+    </script>
+</body>
+</html>
