@@ -18,14 +18,17 @@
     <p>Aqui vai o resultado.</p>
     <p id="p2">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
     <div>Clique em mim!</div>
+    <p class="p3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam optio doloremque rem, voluptatem quas omnis ipsum quis esse laboriosam iure officia? Tempore exercitationem dolorem praesentium est natus et, cupiditate esse!</p>
     <script>
         var p1=window.document.getElementsByTagName('p')[0]
         var p2=window.document.querySelector ('p#p2')
-       p1.innerText='Olha que legall!!'
-       p1.style.color='yellow'
-       p2.innerText='Estou em constante mudanca'
-       p2.style.background='green'
-       window.document.write(window.document.charset)
+       p1.innerText = 'Olha que legall!!'
+       p1.style.color = 'yellow'
+       p2.innerText = 'Estou em constante mudanca'
+       p2.style.background = 'green'
+       var pa3 = window.document.getElementsByClassName ('p#p3')
+       pa3.style.color = 'red'
+       document.write(p1.innerText)
     </script>
 </body>
 </html>
