@@ -17,17 +17,19 @@
     <h1>Primeiros passos no DOM</h1>
     <p>Aqui vai o resultado.</p>
     <p id="p2">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim!</div>
-    <p class="p3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam optio doloremque rem, voluptatem quas omnis ipsum quis esse laboriosam iure officia? Tempore exercitationem dolorem praesentium est natus et, cupiditate esse!</p>
+    <div>Clique!</div>
+    <li class="l1" type="square">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam optio doloremque rem, voluptatem quas omnis ipsum quis esse laboriosam iure officia? Tempore exercitationem dolorem praesentium est natus et, cupiditate esse!</li>
+    <p class="grito">aaaaaaaaaaaah num sei</p>
     <script>
         var p1 = window.document.getElementsByTagName ('p')[0]
-        var p2 = window.document.querySelector ('p#p2')
-        var p3 = window.document.getElementsByClassName ('p.p3')[0]
-       p1.innerText = 'Olha que legall!!'
-       p1.style.color = 'yellow'
-       p2.innerText = 'Estou em constante mudanca'
-       p2.style.background = 'green'
-       window.alert(p3.innerText)
+        var p2 = window.document.getElementById ('p2')
+        var lista = window.document.getElementsByClassName ('l1')[0]
+        var Grito = window.document.querySelector('p.grito')
+        p1.style.background = 'green'
+        p1.innerText = 'Alguma coisa está errado'
+        lista.style.background = 'red'
+        Grito.innerText = 'GRITO!'
+        window.alert('olá mundo ' + Grito.innerText)
     </script>
 </body>
 </html>

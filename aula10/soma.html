@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2em;
+        }
+        input{
+            box-shadow: 1px 1px 2px black;
+        }
+        p#res{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Números</h1>
+    <input type="number" id="input1"> 
+    + 
+    <input type="number" id="input2"> 
+    <input type="button" value="somar" onclick="clicarnasoma()"><!-- o 'value' é o nome do input que ira aparecer no centro do botãos.--> 
+    <p id="res">Resultado</p>
+    <script>
+        function clicarnasoma()
+        {
+        var inp1 = window.document.getElementById('input1')
+        var inp2 = window.document.getElementById('input2')
+        var resul = window.document.getElementById('res')
+        var n1 = Number.parseInt(inp1.value)
+        var n2 = Number.parseInt(inp2.value)
+        var soma = n1 + n2
+        resul.innerText = `A soma de ${n1} e ${n2} é = ${soma}.`
+        }
+    </script>
+</body>
+</html>

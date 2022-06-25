@@ -7,7 +7,7 @@
     <title>Eventos Dom</title>
     <style>
         div#area{
-            background-color: coral;
+            background-color: greenyellow;
             color: black;
             width: 200px;
             height: 200px;
@@ -17,15 +17,26 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()">
-        Interaja...
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseleave="saiu()">
+        👋vem aqui!
     </div>
     <script>
-        var a = window.document.getElementById('area')
-        function clicar(){
-            a.innerText='CLICOU!'
-            a.style.background='red'
-        }
+        var A = window.document.getElementById('area')
+        function clicar()
+            {
+                A.style.background = 'blue'
+                A.innerText = 'Obrigado!😊' 
+            }
+            function entrou()
+            {
+                A.style.background = 'red'
+                A.innerText = 'clica em mim pfv?👉👈'
+            }
+            function saiu()
+            {
+                A.style.background = 'greenyellow'
+                A.innerText = 'tchau!😔'
+            }
     </script>
 </body>
 </html>
