@@ -14,9 +14,12 @@
         input{
             box-shadow: 1px 1px 2px black;
         }
-        p#res{
+        p{
             background-color: black;
             color: white;
+        }
+        input.botao:hover{
+            background-color: rgb(21, 255, 0);
         }
     </style>
 </head>
@@ -25,18 +28,52 @@
     <input type="number" id="input1"> 
     + 
     <input type="number" id="input2"> 
-    <input type="button" value="somar" onclick="clicarnasoma()"><!-- o 'value' é o nome do input que ira aparecer no centro do botãos.--> 
+    <input type="button" value="somar" class="botao" onclick="clicarnasoma()" onmouseenter="mouseenter()" onmouseleave="mouseleave()"><!-- o 'value' é o nome do input que ira aparecer no centro do botãos.--> 
     <p id="res">Resultado</p>
+
+    <h1>Multiplicando Números</h1>
+    <input type="number" id="input3"> 
+    X 
+    <input type="number" id="input4"> 
+    <input type="button" value="mult" class="botao" onclick="clicarnamultiplicacao()" onmouseenter="mouseenter()" onmouseleave="mouseleave()">
+    <p id="res2">Resultado</p>
+
+    <h1>Multiplicando Números</h1>
+    <input type="number" id="input5"> 
+    / 
+    <input type="number" id="input6"> 
+    <input type="button" value="divi" class="botao" onclick="clicarnadivisao()" onmouseenter="mouseenter()" onmouseleave="mouseleave()">
+    <p id="res3">Resultado</p>
     <script>
         function clicarnasoma()
         {
         var inp1 = window.document.getElementById('input1')
         var inp2 = window.document.getElementById('input2')
         var resul = window.document.getElementById('res')
-        var n1 = Number.parseInt(inp1.value)
-        var n2 = Number.parseInt(inp2.value)
+        var n1 = Number(inp1.value)
+        var n2 = Number(inp2.value)
         var soma = n1 + n2
         resul.innerText = `A soma de ${n1} e ${n2} é = ${soma}.`
+        }
+        function clicarnamultiplicacao()
+        {
+        var inp3 = window.document.getElementById('input3')
+        var inp4 = window.document.getElementById('input4')
+        var resul = window.document.getElementById('res2')
+        var n3 = Number(inp3.value)
+        var n4 = Number(inp4.value)
+        var mult = n3 * n4
+        resul.innerText = `A multíplicacão de ${n3} e ${n4} é = ${mult}.`
+        }
+        function clicarnadivisao()
+        {
+        var inp5 = window.document.getElementById('input5')
+        var inp6 = window.document.getElementById('input6')
+        var resul = window.document.getElementById('res3')
+        var n5 = Number(inp5.value)
+        var n6 = Number(inp6.value)
+        var divi = n5 / n6
+        resul.innerText = `A divisão de ${n5} e ${n6} é = ${divi}.`
         }
     </script>
 </body>
