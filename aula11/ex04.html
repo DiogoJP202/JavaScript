@@ -17,10 +17,13 @@
         var País = window.document.getElementById('país')
         var res = window.document.querySelector('div#resposta')
         function clicar(){
-            if(País != 'Brasil'){ 
+            var país_do_usuario = (País.value)
+            if(país_do_usuario != 'Brasil'){ 
                 res.innerHTML = '<p>Você é <strong>Estrangeiro</strong>.</p>'
+                res.innerHTML +=  '<p>Entrada bloqueada!.</p>'
             } else{
                 res.innerHTML = '<p>Você é <strong>Brasileiro</strong>.</p>'
+                res.innerHTML +=  '<p>Pode passar!.</p>'
              }
         }
 
