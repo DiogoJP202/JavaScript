@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando IF</title>
+</head>
+<body>
+    <h1>Sistema De Multas</h1>
+    <p> 
+        Coloque sua velocidade: 
+        <input type="number" name="velocidade" id="velocidade"> km/h.
+        <input type="button" value="Verificar"  onclick="clique()">
+    </p>
+    <div id="resultado"></div>
+    <script>
+        function clique(){
+        var vel = window.document.getElementById('velocidade')
+        var res = window.document.querySelector('div#resultado')
+        var velocidade = Number(vel.value)
+        res.innerHTML = `<p>Sua velocidade é de ${velocidade} km/h.</p>`
+        if (velocidade > 60 ){
+            res.innerHTML += '<p>Você ultrapassou a velocidade permitida! <strong>MULTADO!</strong></p>'
+        }
+        res.innerHTML += '<p>Dirija com cinto de seguranca.</p>'
+        }
+    </script>
+</body>
+</html>
