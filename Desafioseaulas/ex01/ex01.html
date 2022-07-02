@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horário</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+            text-align: center;
+            height: 95vh;
+        }
+        section{
+            box-shadow: 5px 5px 10px black;
+            margin: auto;
+            background-color: white;
+            width: 500px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        footer{
+            margin-top: 20px;
+            font-style: italic;
+        }
+        footer > p{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            margin-top: 20px;
+        }
+        div.imagem > img.imagem{
+            display: block;
+            text-align: center;
+            width: 450px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>🌚Hora Do Dia🌞</h1>
+    </header>
+    <section>
+<div id="msg">
+    <p>aqui vai aparecer a mensagem...</p>
+</div>
+<div class="imagem" >
+    <img src="imagens/manha.png" alt="fotodemanha" class="imagem" >
+</div>
+    </section>
+    <footer>
+        <p>© Feito por Diogo Antonny.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
