@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio da idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador De Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de nascimento: <input type="number" name="txtano" id="txtano"></p>
+            <p>Sexo: 
+                <input type="radio" name="radsex" id="Masc" checked>
+                <label for="Masc">Masculino</label>
+                <input type="radio" name="radsex" id="Femi" >
+                <label for="Femi">Feminino</label>
+            </p>
+            <p> Clique aqui após preencher e marcar todos os dados: <input type="button" value="Verificar" onclick="verificar()"></p>
+        </div>
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </div>
+    </section>
+    <footer>
+        <p>© Criado por Diogo Antonny</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
