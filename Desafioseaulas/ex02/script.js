@@ -1,3 +1,8 @@
+let Caixafundo = window.confirm('Deixar o fundo vermelho?')
+    let fundo = document.getElementsByTagName('body')[0]
+    if ( Caixafundo == true){
+        fundo.style.background = 'rgb(234, 126, 126)'
+    }
 function verificar(){ //ao clicar no botão, o codigo abaixo ira rodar.
     var data = new Date ()
     var ano = data.getFullYear ()
