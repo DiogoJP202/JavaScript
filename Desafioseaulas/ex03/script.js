@@ -4,7 +4,7 @@ var Npassos = document.getElementById ('txtNP')
 var resp = document.getElementById ('res')
 function clicar () {
 if ( Ninicio.value.length == 0 || Nfim.value.length == 0 ) {
-    window.alert ('Verifique se as informacões estão corretas!')
+    window.alert ('[ERROR] Verifique se as informacões estão corretas!')
 } else {
     var Vinicio = Number(Ninicio.value)
     let Vfim = Number(Nfim.value)
@@ -28,6 +28,6 @@ if ( Ninicio.value.length == 0 || Nfim.value.length == 0 ) {
             resp.innerHTML += (`${Vinicio}🏁`)
         }
     }
-        
+         
 }
 }
