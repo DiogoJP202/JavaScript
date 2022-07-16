@@ -1,5 +1,5 @@
 function carregar(){
-    var agora = new Date()
+    const agora = new Date() //tambem existe o const que funciona como uma variavel
     var hora = agora.getHours()
     var foto = window.document.getElementsByClassName ('imagem')[1]
     var mensagem = window.document.getElementById ('msg')

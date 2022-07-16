@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icones/Cronometro_Cinza.ico" type="image/x-icon">
+</head>
+<body onload="carregar()">
+
+    <h1>CRONOMETRO</h1>
+    <h2>CRONOMETRO EM JAVASCRIPT</h2>
+    <div id="tempo">
+        <p>
+            <span id="segundos">00</span>:<span id="milisegundos">00</span><!--a tag <span> é um tipo de conteiner generico-->
+        </p>
+    </div>
+    <div id="botoes">
+        <input type="button" value="Começar" id="Começar" onclick="clicarC()">
+        <input type="button" value="Pausar" id="Pausar" onclick="clicarP()">
+        <input type="button" value="Resetar" id="Resetar" onclick="clicarR()">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
