@@ -1,6 +1,6 @@
 let numero = [1,3,5,7]
 console.log(`O vetor numero possui os valores ${numero}`)
-numero[2]= 9
+numero[2+1]= 9
 console.log(`O vetor numero possui os valores ${numero}`)
 console.log(`O numero de valores que o vetor possui é ${numero.length}`)
 numero.sort()
