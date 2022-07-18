@@ -20,9 +20,9 @@ var X = function (Y){
 console.log(X(6))
 console.log('-----------------')
 function fatorial(n){//isso é uma funcao que pode ser ativada, o "N" é algum numero que pode ser escolhido 
-for(var mult = n - 1; mult >= 1; mult --){// enquanto mult for menor ou igual a 1 tire -1 de mult e faça mult vezes o valor atual de N
+for(var mult = n - 1 ; mult > 1; mult --){// enquanto mult for menor ou igual a 1 tire -1 de mult e faça mult vezes o valor atual de N
     n = mult * n
 }
 return n //quando mult for = 0 retorne n
 }
-console.log(fatorial(10))// Aqui chama a funcao fatorial e da o numero(parametro) 5
+console.log(fatorial(5))// Aqui chama a funcao fatorial e da o numero(parametro) 5
