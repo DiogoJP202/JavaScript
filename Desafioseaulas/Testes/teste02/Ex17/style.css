@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(73, 202, 127);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+section{
+    background-color: white;
+    padding: 10px;
+    margin: 25px auto;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 800px;
+    min-width: 300px;
+}
+select{
+    width: 150px;
+    margin-top: 20px;
+}

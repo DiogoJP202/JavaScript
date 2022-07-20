@@ -3,7 +3,7 @@ var Pteste = window.document.getElementById('teste')
 function clicarA(){
     var VIN = Number(InputN.value)
     function par_imp(n) {
-    if(n % 2 == 0){
+    if( n % 2 == 0){
         return 'Par'
     } else {
         return 'Ímpar'
