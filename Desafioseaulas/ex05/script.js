@@ -22,6 +22,8 @@ function clicarA(){
     }
     if(verificarvalor(Vtxtn) == true){
         Colocarvalor(Vtxtn)
+        TxtN.value = ""
+        TxtN.focus()
     }
 }
 function clickF(){
