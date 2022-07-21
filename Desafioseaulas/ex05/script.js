@@ -27,6 +27,9 @@ function clicarA(){
     }
 }
 function clickF(){
+    if(valores.length == 0){
+        window.alert('Coloque os valores!')
+    } else {
     function somando(){
         var n = 0
         for(var chave = 0; chave <= valores.length -1; chave += 1){
@@ -36,4 +39,5 @@ function clickF(){
     }
     valores.sort(function(a,b){return a-b})
     resu.innerHTML = ` Ao todo, temos ${valores.length} números cadastrados. <br> O maior valor informado foi ${valores[valores.length-1]}. <br> O menor valor informado foi ${valores[0]} . <br> Somando todos os valores temos ${somando(valores)}. <br> A média dos valores são  ${somando(valores)/valores.length}.`
+}
 }
