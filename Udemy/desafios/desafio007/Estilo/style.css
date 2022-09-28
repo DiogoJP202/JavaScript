@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+:root{
+    --Primary-color: rgb(70, 141, 126);--Secondary-color: rgba(70, 141, 126, 0.493);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px; 
+    margin: 0px;
+}
+
+body{
+ height: 100%;
+ background-color: var(--Primary-color);
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    margin: 25% auto;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 20px;
+}
+p{
+    text-align: justify;
+}
+form{
+    text-align: left;
+    font-size: 20px;
+}
+form input{
+    margin: 5px 10px;
+    width: 25%;
+    height: 25px;
+}
+input:focus{
+    border: 3px solid var(--Primary-color);
+    background-color: var(--Secondary-color);
+}
+.button{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: block;
+    margin: 15px auto 0px auto;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.button:hover{
+    background-color: var(--Secondary-color);
+    border-color: white;
+}
+.button:active{
+    background-color: rgb(238, 92, 92);
+    border-color: white;
+}
+.IMC{
+    justify-content: space-around;
+    display: flex;
+}
+h2{
+    font-size: 1.5em;
+    text-align: left;
+    text-decoration: underline;
+}
+#IMC, #IMCRes{
+    font-size: 20px;
+    line-height: 40px;
+}
+#IMC > p, #IMCRes > p{
+    font-weight: 100;
+}
+#Resultado{
+    background-color: var(--Secondary-color);
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 75%;
+    border-radius: 10px;
+}
