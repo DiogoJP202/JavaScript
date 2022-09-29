@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --Cor1: rgb(66, 66, 66);
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    background-color: var(--Cor1);
+    color: white;
+    text-shadow: 1px 1px 9px black;
+    padding-bottom: 5px;
+}
+nav{
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+nav > a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+nav a:hover{
+    color: gold;
+    transition-duration: 2s;
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+}
+section{
+    text-align: center;
+    margin: 10px auto;
+    width: 90%;
+    border: 3px solid black;
+}
+img{
+    width: 230px;
+    height: 200px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+.Titulos_Animes{
+    margin: 5px auto;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.726);
+    width: 50%;
+    border-radius: 10px;
+}
+#Berserk{
+    background-image: url(../imagens/GutsBackgroundMobile.jpg);
+    background-size: cover;
+    background-position: right center;
+
+}
+#Vagabond{
+    background-image: url(../imagens/VagabondBackground.jpg);
+    background-size: cover;
+}
+#TheVillandSaga{
+    background-image: url(../imagens/Vinland_Saga_Background.jpg);
+    background-size: cover;
+}
+#Wakfu{
+    background-image: url(../imagens/WakfuBackgroundMobile.jpg);
+    background-size: cover;
+    background-position: bottom center;
+
+}
+#Bleach{
+    background-image: url(../imagens/BleachBackground.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+#OnePiece{
+    background-image: url(../imagens/OnepieceBackground.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+#Hellsing{
+    background-image: url(../imagens/HellsingBackground.jpg);
+    background-size: cover;
+    background-position: top center;
+
+}
+#FullMetal{
+    background-image: url(../imagens/FullmetalBackground.jpg);
+    background-size: cover;
+}
+#Kakegurui{
+    background-image: url(../imagens/KakeguruiBackground.jpg);
+    background-size: cover;
+}
