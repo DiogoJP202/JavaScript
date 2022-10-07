@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+:root{
+    --Primary-color: rgb(70, 141, 126);--Secondary-color: rgba(70, 141, 126, 0.493);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px; 
+    margin: 0px;
+}
+
+body{
+ height: 100%;
+ background-color: var(--Primary-color);
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    margin: 20% auto;
+    padding: 30px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 3em;
+    margin: 20px;
+}
+div#ITimer{
+    text-align: center;
+    font-size: 2.5em;
+}
+.pausado{
+    color: red;
+}
+input{
+    margin-right: 10px;
+    padding: 5px;
+}
+input:hover{
+    transition-duration: 1s;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
