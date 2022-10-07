@@ -3,21 +3,29 @@
     const buttonIniciar = document.querySelector('#IIniciar');
     const buttonPausar = document.querySelector('#IPausar');
     const buttonZerar = document.querySelector('#IZerar');
+    const tempo = document.querySelector('#timer');
 
     //Os outros botões só funcionaram quando o buttonIniciar for inicializado.
+
+    let segundos = 0;
+    let minutos = 0;
+    let horas = 0;
 
     buttonIniciar.addEventListener('click',function(){
         const seconds = document.querySelector('#seconds');
         const minutes = document.querySelector('#minutes');
         const hours = document.querySelector('#hours');
 
-        let segundos = 0;
-        let minutos = 0;
-        let horas = 0;
         let timer = setInterval(contadorDeTempo, 1000);
+
+        tempo.style.color = 'black';
 
         buttonZerar.addEventListener('click', function(){
             zerar()
+        })
+
+        buttonPausar.addEventListener('click', function(){
+            pausar();
         })
 
         function contadorDeTempo(){
@@ -47,6 +55,10 @@
             return x;
         }
 
+        function pausar(){
+            clearInterval(timer);
+            tempo.style.color = 'red';
+        }
         function zerar(){
             clearInterval(timer);
             horas = 0;
