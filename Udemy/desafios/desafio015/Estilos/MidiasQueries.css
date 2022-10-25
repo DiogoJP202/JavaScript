@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@media screen and (max-width: 349px){
+    .container{
+        max-width: 550px;
+    }
+    .btn{
+        font-size: 0.7em;
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .container{
+        max-width: 550px;
+    }
+    .btn{
+        font-size: 2em;
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .container{
+        max-width: 550px;
+    }
+    .btn{
+        font-size: 2em;
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+}

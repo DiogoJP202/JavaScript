@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+:root{
+    --Primary-color: #204829;
+    --Secondary-color: #22b455;
+    --tertiary-color: #80ce87;
+    --quaternary-color: #92e5a1;
+    --quinário-color: #020204;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px; 
+    margin: 0px;
+}
+
+body{
+ height: 100%;
+ background-color: var(--Primary-color);
+ background-image: url(../Imagens/matrix.jpg);
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ background-position-y: center;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 2em;
+ color: white;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+  }
+
+.container{
+    max-width: 90%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    border: 3px solid white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+p{
+    text-align: justify;
+}
+.calculadora{
+    text-align: center;
+    width: 100%; 
+ }
+ .display{
+    width: 100%;
+    height: 60px;
+    border: 3px solid var(--Secondary-color);
+    border-radius: 10px;
+ }
+.btn{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    font-size: 1em;
+    background-color: var(--Primary-color);
+}
+.btn:hover{
+    transition-duration: 0.5s;
+    background-color: var(--quaternary-color);
+    color: var(--quinário-color);
+    border-color: var(--quinário-color);
+}
