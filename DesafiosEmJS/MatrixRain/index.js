@@ -27,3 +27,4 @@ function draw(){
 }
 
 draw();
+window.addEventListener('resize', draw());
