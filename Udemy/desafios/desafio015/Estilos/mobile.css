@@ -33,6 +33,11 @@ canvas {
     width: 100%;
   }
 
+.display{
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px var(--Secondary-color);
+    text-align: right;
+}
 .container{
     max-width: 90%;
     padding: 10px;
@@ -70,6 +75,7 @@ p{
     color: white;
     font-size: 1em;
     background-color: var(--Primary-color);
+    cursor: pointer;
 }
 .btn:hover{
     transition-duration: 0.5s;
