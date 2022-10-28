@@ -1,7 +1,7 @@
 function matrixRain() {
     const c = document.getElementById('matrix');
     const ctx = c.getContext('2d');
-
+    
     c.height = window.innerHeight;
     c.width = window.innerWidth;
 
