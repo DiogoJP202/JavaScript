@@ -26,7 +26,7 @@ function matrixRain() {
         }
         window.requestAnimationFrame(draw);
     }
-    window.addEventListener('resize',() =>{matrixRain()})
+    window.addEventListener('resize',(matrixRain))
     draw();
 }
 matrixRain();
