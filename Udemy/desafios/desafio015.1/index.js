@@ -75,17 +75,14 @@ function Criacalculadora(){
             display.value = math;
         };
 
-        this.clearDisplay = () => {
-            display.value = "";
-        };
+        this.clearDisplay = () => display.value = "";
         
-        this.clearCharacter = () => {
-            display.value = display.value.slice(0, -1);
-        };
+        this.clearCharacter = () => display.value = display.value.slice(0, -1);
 
         this.btnParaDisplay = (valor) => {
             display.value += valor;
-        };
+            display.focus();
+        }
 }
 const calculadora = new Criacalculadora();
 calculadora.start();
