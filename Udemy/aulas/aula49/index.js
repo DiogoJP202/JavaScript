@@ -14,8 +14,8 @@ let chave = 'nome';
 console.log(pessoa[chave]);
 
 const pessoa1 = new Object();
-pessoa1.nome = "Felipe";
-pessoa1.sobrenome = "Feliciano";
+pessoa1.nome = "Diogo";
+pessoa1.sobrenome = "Antonny";
 pessoa1.idade = 17;
 
 pessoa1.falaNome = function() {
