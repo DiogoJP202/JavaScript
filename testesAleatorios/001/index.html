@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela De Login</title>
+    <link rel="stylesheet" href="styles/styles.css" media="all">
+    <link rel="shortcut icon" href="Imagens/Presente.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <h1>&#x1F381 Faça o Cadastro! Para um presente! &#x1F381</h1>
+        <nav>
+            <p id="msg">Um Cadastro para criar um PRESENTE.</p>
+            <div id="CorSite">
+                MODO ESCURO:
+                SIM: <input type="radio" id="ImodoEscuro" name="corDoSite">
+                NÃO: <input type="radio" id="ImodoClaro"  name="corDoSite" checked>
+            </div>
+        </nav>
+        <form action="Scripts/script.js" method="post" autocomplete="on">
+            <fieldset>
+                <legend>CADASTRO</legend>
+                <p>
+                    <label for="INome">Nome:</label>
+                    <input type="text" id="INome" required minlength="4" maxlength="40">
+                </p>
+        
+                <p>
+                    <label for="Isobrenome">Sobrenome:</label>
+                    <input type="text" id="Isobrenome" required minlength="4" maxlength="40">
+                </p>
+                <p>
+                    <label for="Inickname">Nickname:</label>
+                    <input type="text" id="Inickname" required minlength="4" maxlength="40" >
+                </p>
+                <p>
+                    <label for="ICor">CorFavorita:</label>
+                    <input type="color" id="ICor">
+                </p>
+                <p>
+                    Animal Preferido: <br>
+                    <input type="radio" name="Animal" id="ICachorro">
+                    <label for="ICachorro">Cachorros</label> <br>
+                    <input type="radio" name="Animal" id="IGato">
+                    <label for="IGato">Gatos</label> <br>
+                    <input type="radio" name="Animal" id="IPassarinho">
+                    <label for="IPassarinho">Passarinhos</label>
+                    <br>
+                    <input type="radio" name="Animal" id="ILargato">
+                    <label for="ILargato">Largatos</label>
+                    <br>
+                    <input type="radio" name="Animal" id="IPeixe">
+                    <label for="IPeixe">Peixes</label>
+                </p>
+                    <div id="footer">
+                        <input type="submit" value="Enviar" id="IEnviar">
+                        <input type="reset" value="Apagar" id="IApagar">
+                    </div>
+            </fieldset>
+        </form>
+    </main>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
