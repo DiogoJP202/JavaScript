@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+@media screen and (width < 450px){
+    header{
+        margin: 20px;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        top: 55%;
+    }
+    #resultado{
+        top: 87%;
+    }
+}
+
 @media screen and (min-width: 768px){
     main{
         width: 600px;
