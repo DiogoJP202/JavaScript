@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/Mobile.css" media="all">
+    <link rel="stylesheet" href="Estilos/MidiasQueries.css">
+    <title>CPF validator</title>
+</head>
+<body>
+    <header>
+        <h1>CPF Validator</h1>
+        <p>CPF Validator Created by &#xA9 <a href="https://diogojp202.github.io/Portifolio/">Diogo Antonny</a>.</p>
+    </header>
+    <main>
+        <img src="Imagens/cpf-caixa.png" alt="CPF">
+        <form method="post" autocomplete="off">
+            
+                <p>Put here the CPF to start the appraisal.
+                </p>
+                <label for="ICPF">CPF: </label>
+                <input type="text" name="CPF" id="ICPF" maxlength="11"  minlength="11" placeholder="00000000000">
+                <p>
+                    <input type="submit" value="Enviar" class="botoes">
+                    <input type="reset" value="Limpar" class="botoes">
+                </p>
+        </form>
+    </main>
+    <div id="resultado">
+
+    </div>
+    <footer>
+        <p>Created by &#xA9 <a href="https://diogojp202.github.io/Portifolio/">Diogo Antonny.</a></p>
+    </footer>
+    <script src="Script/script.js"></script>
+</body>
+</html>
