@@ -21,7 +21,7 @@ class ValidaCPF{
     return novoCpf === this.cpfLimpo;
   };
 
-  criaDigito(cpfParcial) {
+  static criaDigito(cpfParcial) {
     const cpfArray = Array.from(cpfParcial);
   
     let regressivo = cpfArray.length + 1;
