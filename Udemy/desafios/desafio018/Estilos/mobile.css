@@ -84,3 +84,8 @@ label{
     background-color: #65727c;
     color: white;
 }
+
+.resp{
+    color: rgb(255, 0, 0);
+    font-size: 1em;
+}
