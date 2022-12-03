@@ -1,9 +1,10 @@
+const form = document.querySelector('form');
+
 form.addEventListener('submit', enviarEventoForm);
 
 function enviarEventoForm(event){
     event.preventDefault();
 
-    const form = document.querySelector('form');
     const divsR = document.querySelectorAll('.resp');
     const enviar = document.querySelector('#enviar');
 
