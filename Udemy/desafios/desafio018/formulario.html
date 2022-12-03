@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/mobile.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+    <h1>Formulário De Cadastro</h1>    
+    <p>Criado por <a href="https://diogojp202.github.io/Portifolio/">Diogo Antonny</a>.</p>
+    </header>
+    <main>
+        <h2>Formulário de cadastro</h2>
+        <form action="" method="post">
+            <div>
+                <div class="inputs">
+                    <label for="INome">Nome: </label><br>
+                    <input class="Input" type="text" name="Nome" id="INome" required minlength="3" maxlength="12">
+                </div>
+                <div class="inputs">
+                    <label for="ISobreN">Sobrenome: </label><br>
+                    <input class="Input" type="text" name="SobreN" id="ISobreN" required minlength="3" maxlength="12">
+                </div>
+                <div class="inputs">
+                    <label for="ICPF">CPF: </label><br>
+                    <input class="Input" type="text" name="CPF" id="ICPF" required minlength="11" maxlength="11">
+                </div>
+                <div class="inputs">
+                    <label for="ISenha">Senha: </label><br>
+                    <input class="Input" type="password" name="Senha" id="ISenha" required minlength="6" maxlength="20">
+                </div>
+                <div class="inputs">
+                    <label for="IRepetirS">Repetir Senha: </label><br>
+                    <input class="Input" type="password" name="RepetirS" id="IRepetirS" required minlength="6" maxlength="20">
+                </div>
+                
+            </div>
+            <input id="enviar" type="submit" value="Enviar">
+        </form>
+    </main>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
