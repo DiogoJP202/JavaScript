@@ -1,11 +1,11 @@
-const form = document.querySelector('form');
-const divsR = document.querySelectorAll('.resp');
-const enviar = document.querySelector('#enviar');
-
 form.addEventListener('submit', enviarEventoForm);
 
 function enviarEventoForm(event){
     event.preventDefault();
+
+    const form = document.querySelector('form');
+    const divsR = document.querySelectorAll('.resp');
+    const enviar = document.querySelector('#enviar');
 
     class Formulario{
         constructor(nome, sobreN, CPF, senha, confirmaSenha, enviar){
