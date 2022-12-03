@@ -1,5 +1,6 @@
 const form = document.querySelector('form');
 const divsR = document.querySelectorAll('.resp');
+const enviar = document.querySelector('#enviar');
 
 form.addEventListener('submit', enviarEventoForm);
 
@@ -22,7 +23,9 @@ function enviarEventoForm(event){
                 const p = this.criaP();
                 p.innerHTML = 'O usuário deverá conter apenas lestras!';
                 divsR[0].appendChild(p);
+                return false;
             }
+            return true;
         };  
 
         verificaSobreN(){
@@ -31,7 +34,9 @@ function enviarEventoForm(event){
                 const p = this.criaP();
                 p.innerHTML = 'O usuário deverá conter apenas lestras!';
                 divsR[1].appendChild(p);
+                return false;
             }
+            return true;
         };
 
         criaP(){
@@ -53,7 +58,9 @@ function enviarEventoForm(event){
                 const p = this.criaP();
                 p.innerHTML = 'CPF inválido!';
                 divsR[2].appendChild(p);
+                return false;
             }
+            return true;
           };
         
           criaDigito(cpfParcial) {
@@ -83,9 +90,10 @@ function enviarEventoForm(event){
                 const p = this.criaP();
                 p.innerHTML = 'As senhas precisam ser iguais!';
                 divsR[4].appendChild(p);
-            }
-          }
-        
+                return false;
+            };
+            return true;
+          };
     };
 
     const formulario = new Formulario(
@@ -97,8 +105,16 @@ function enviarEventoForm(event){
         document.querySelector('#enviar').value
         );
 
-    formulario.verificaNome();
-    formulario.verificaNome(); 
-    formulario.valida();
-    formulario.verificaSenhas();
+    if( formulario.verificaNome() === true && formulario.verificaSobreN() === true &&formulario.valida() === true && formulario.verificaSenhas() === true ){
+        const divEnviar = document.querySelector('#enviado');
+
+        divEnviar.classList.remove('desaparecer');
+        divEnviar.classList.add('aparecer');
+
+        setTimeout(() =>{
+            divEnviar.classList.remove('aparecer');
+            divEnviar.classList.add('desaparecer');
+        }, 1000)
+
+        };
 };

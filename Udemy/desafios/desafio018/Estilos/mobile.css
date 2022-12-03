@@ -70,7 +70,8 @@ label{
 }
 
 #enviar{
-    width: 80%;
+    width: 50%;
+    min-width: 300px;
     display: block;
     margin: 15px auto;
     height: 30px;
@@ -80,7 +81,6 @@ label{
 }
 
 #enviar:hover{
-    transition: 1s;
     background-color: #65727c;
     color: white;
 }
@@ -88,4 +88,21 @@ label{
 .resp{
     color: rgb(255, 0, 0);
     font-size: 1em;
+}
+#enviado{
+    color: green;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+ 
+.aparecer{
+    transition: 1s;
+    display: block;
+}
+
+.desaparecer{
+    transition: 1s;
+    display: none;
 }
