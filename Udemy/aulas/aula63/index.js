@@ -1,6 +1,6 @@
 function esperaAi(msg, tempo, ){
     return new Promise((resolve, reject) => {
-        if(msg !== 'string') reject(new Error('error'));
+       // if(msg !== 'string') reject(new Error('error'));
         setTimeout(() =>{
             resolve(msg)
         }, tempo);
