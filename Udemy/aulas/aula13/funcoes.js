@@ -17,3 +17,5 @@ console.log(raiz(11));
 
 let raiz2 = (numero) => {return numero ** 0.5;}
 console.log(raiz2(9));
+
+const dizOi = () => console.log('OI!');

@@ -13,5 +13,5 @@ console.log(frase.replace(/r/g, "l"));//Reposiciona valores.
 console.log(frase.length);//mostra a quantidade de caracteres de uma certa string.
 console.log(frase.slice(0, 6));//pega uma parte especifica da string.
 console.log(frase.split(" "));//Divide a string em partes trocando um caracter selecionado por divisões.
-console.log(fruta.toUpperCase);//deixa toda a string em maiuscula.
-console.log(fruta.toLowerCase);//deixa toda a string em minuscula.
+console.log(fruta.toUpperCase());//deixa toda a string em maiuscula.
+console.log(fruta.toLowerCase());//deixa toda a string em minuscula.
