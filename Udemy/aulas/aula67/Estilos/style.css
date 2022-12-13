@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: rgb(108, 173, 122);
+}
+
+html, body{
+    height: 98vh;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+main{
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    margin: 4em auto;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+}
