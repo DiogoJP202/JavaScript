@@ -36,10 +36,10 @@ Promise.race(promises).then((valor) => {
 */
 
 function baixaPagina(){
-    const emCache = false;
+    const emCache = true;
 
     if(emCache){
-        return Promise.resolve('Página em cache!');
+        return Promise.resolve('Página em cache!'); //manda diretamente ao then.
     } else {
         console.log('Baixando Página...')
         return esperaAi('Página instalada!', 3000);

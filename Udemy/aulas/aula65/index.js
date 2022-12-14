@@ -23,13 +23,17 @@ function aleatorio(min = 0, max = 3){
 esperaAi("Fase 1", aleatorio()).then(valor => {
     console.log(valor);
     return esperaAi("Fase 2", aleatorio());
-}).then(valor => {
+})
+.then(valor => {
     console.log(valor);
     return esperaAi("Fase 3", aleatorio());
-}).then(valor => {
+})
+.then(valor => {
     console.log(valor);
     return valor;
-}).then(valor => console.log('Terminamos na fase: ' + valor)).catch(erro => console.log(erro));
+})
+.then(valor => console.log('Terminamos na fase: ' + valor))
+.catch(erro => console.log(erro));
 */
 
 async function execulta(){

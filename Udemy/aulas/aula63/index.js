@@ -13,14 +13,16 @@ function aleatorio(min, max){
     return Math.floor(Math.random() * (max - min) + min)
 }
 
+
 esperaAi('Frase 1', aleatorio(1, 3)).then((resposta) => {
     console.log(resposta);
-    return esperaAi('Frase 2', aleatorio(1, 3)).then((resposta) => {
-        console.log(resposta);    
-        esperaAi('Frase 3', aleatorio(1, 3)).then((resposta) => {
-            console.log(resposta);
-        });
-    });
-}).catch((erro) => {
+    return esperaAi('Frase 2', aleatorio(1, 3))})
+.then((resposta) => {
+    console.log(resposta);    
+    return esperaAi('Frase 3', aleatorio(1, 3))})
+.then((resposta) => {
+        console.log(resposta);
+})
+.catch((erro) => {
     console.log(erro);
 });
