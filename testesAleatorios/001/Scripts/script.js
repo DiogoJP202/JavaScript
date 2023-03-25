@@ -38,7 +38,7 @@ function sekiroTimer(){
         setTimeout(() => {
             corpo.classList.remove('sekiro');
         }, 3000)
-    }, 60000)
+    }, 30000)
     
 }
 //faze animacao de presente abrindo
@@ -48,11 +48,27 @@ form.addEventListener('submit', (event) => {
 
     let formObj = {
         name: document.querySelector('#INome'),
-        lastName: document.querySelector('Isobrenome'),
+        lastName: document.querySelector('#Isobrenome'),
         food: document.querySelector('#Ifood'),
         color: document.querySelector('#ICor'),
         animal: document.querySelectorAll('.animal')
     }
+
+    console.log(formObj.color.value);
+    console.log(formObj.food.value);
+    console.log(formObj.lastName.value);
+    console.log(formObj.name.value);
+    console.log(formObj.animal[0].checked);
+    form.classList.add('oculto');
+    presente();
 });
+
+function presente(){
+    const presente = document.querySelector('.presente');
+    presente.style.display = 'flex';
+    let timer = setTimeout(() => {
+        presente.style.display = 'none';
+    }, 4500);
+}
 
 sekiroTimer();

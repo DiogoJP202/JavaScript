@@ -101,3 +101,13 @@ fieldset > p{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.presente{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartao_presente{
+    border: 5px solid black;
+}
