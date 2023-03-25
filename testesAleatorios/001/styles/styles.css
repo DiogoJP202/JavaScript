@@ -10,6 +10,7 @@ body,html{
     height: 98vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 main{
     padding: 10px;
     margin: auto;
@@ -87,4 +88,16 @@ fieldset > p{
 
 .Naoocuto{
     display: block;
+}
+
+.border{
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+
+.sekiro{
+    background-image: url(../Img/giphy.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
