@@ -58,6 +58,7 @@ nav{
     font-size: 1.2em;
 }
 form{
+    display: none;
     width: 90%;
     max-width: 600px;
     padding: 30px;
@@ -82,13 +83,6 @@ fieldset > p{
     border-radius: 10px;
 
 }
-.oculto{
-    display: none;
-}
-
-.Naoocuto{
-    display: block;
-}
 
 .border{
     border: 3px solid gray;
@@ -109,5 +103,10 @@ fieldset > p{
 }
 
 .cartao_presente{
+    margin: auto;
     border: 5px solid black;
+    height: 400px;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
 }
