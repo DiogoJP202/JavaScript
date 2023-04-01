@@ -1,18 +1,19 @@
-this.x = 9; // 'this' refers to the global object (e.g. 'window') in non-strict mode
-const module = {
-  x: 81,
-  getX() {
-    return this.x;
-  },
-};
+function* generator1(){
+	yield 'value01';
+	yield 'value02'; 
+	yield 'value03'; 
+  yield* generator2();
+}
 
-console.log(module.getX()); // 81
+function* generator2(){
+	yield 'value04';
+	yield 'value05'; 
+	yield 'value06'; 
+}
 
-const retrieveX = module.getX;
-console.log(retrieveX()); // 9; the function gets invoked at the global scope
+const g1 = generator1();
 
-// Create a new function with 'this' bound to module
-// New programmers might confuse the
-// global variable 'x' with module's property 'x'
-const boundGetX = retrieveX.bind(module);
-console.log(boundGetX()); // 81
+for(let c = 0; c < 6; c++){
+  console.log(g1.next().value);
+}
+ 
