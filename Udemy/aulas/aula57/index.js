@@ -5,8 +5,6 @@ function criaPessoa(nome, sobrenome){
     })
 }
 
-const pessoaPrototype = {...bebe, ...come, ...fala}
-
 const fala = { 
     fala(){
     console.log(`${this.nome} ${this.sobrenome} fala oi!`)
@@ -25,5 +23,7 @@ bebe(){
 }
 };
 
+const pessoaPrototype = {...bebe, ...come, ...fala}
+
 const p1 = criaPessoa('Diogo', 'Antonny')
-console.log(p1.fala());
+p1.fala();
