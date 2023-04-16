@@ -11,14 +11,22 @@
 }
 
 body{
- height: 100%;
- background-color: var(--Primary-color);
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    background-color: var(--Primary-color);
+    background-image: url(../imagens/timeBackground.jpg);
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 .container{
-    max-width: 800px;
-    margin: 20% auto;
+    max-width: 1000px;
+    width: 80%;
+    margin-top: 100px;
+    height: 250px;
     padding: 30px;
     background-color: whitesmoke;
     border-radius: 20px;
