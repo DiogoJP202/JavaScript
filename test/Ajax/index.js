@@ -27,10 +27,10 @@ function loadResult(response){
     result.innerHTML = response;
 }
 
-fetch('page01.html') //URL or the file path
+axios('page01.html') //URL or the file path
     .then(response => {
         if(response.status !== 200) throw new Error('ERROR 404!'); // Whenever we throw an error, it sends it to catch.
-        return response.text(); // convert the data to text and send it to the next then;
+        return response.data; // convert the data to text and send it to the next then;
     })
     .then(html => console.log(html))
     .catch(error => console.error(error)); 
