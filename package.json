@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "<h1>My Projects</h1>\r <p>HELLO!! welcome to my Java Script repository!! my name is Diogo Antonny and i'm web developer.<br>\r These are some of my projects:</p>\r <p>these projects are in the order of my progression over time.</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiogoJP202/JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiogoJP202/JavaScript/issues"
+  },
+  "homepage": "https://github.com/DiogoJP202/JavaScript#readme",
+  "directories": {
+    "test": "test"
+  }
+}

@@ -1,27 +1,39 @@
-function random(max = 0, min = 0){
-	max *= 1000;
-	min *= 1000;
-	return Math.floor(Math.random() * (max - min) + min);
+function randomTime(min = 1000, max = 5000){
+	let time = Math.random()*(max-min)-min;
+	return Math.floor(time);
 }
 
-function wait(msg, time){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-           resolve(msg);
-        }, time);
-    })
-};
-
-
-async function listener(){
-	const level01 = await wait("Level01", random(1, 3));
-	console.log(level01);
-
-	const level02 = await wait("Level02", random(1, 3));
-	console.log(level02);
-
-	const level03 = await wait("Level03", random(1, 3));
-	console.log(level03);
+function f1(callback){
+	setTimeout(() => {
+		console.log('f1');
+		if(callback) callback();
+	}, randomTime());
 }
 
-listener();
+function f2(callback){
+	setTimeout(() => {
+		console.log('f2');
+		if(callback) callback();
+	}, randomTime());
+}
+
+function f3(callback){
+	setTimeout(() =>  {
+		console.log('f3');
+		if(callback) callback();
+	}, randomTime());
+}
+
+function f1Callback(){
+	f2(f2Callback);
+}
+
+function f2Callback(){
+	f3(f3Callback);
+}
+
+function f3Callback(){
+	console.log("finished here!")
+}
+
+f1(f1Callback);
