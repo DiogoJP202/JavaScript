@@ -21,8 +21,8 @@ module.exports = {
 		   },
        {
         test: /\.css$/,
-        use:['style-loader', 'css-loader']
-       }
+        use: ["style-loader", "css-loader"]
+        }
 			]
 	  },
   devtool: 'source-map' // Does a mapping of the bundle in case of an error in it, this same error is identified in our code. 

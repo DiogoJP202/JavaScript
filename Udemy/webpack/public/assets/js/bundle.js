@@ -21,7 +21,43 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: #c0f8de;
+}
+
+h1{
+    padding: 10px;
+
+    text-align: center;
+}
+
+main{
+    max-width: 800px;
+    width: 80%;
+    height: 800px;
+    
+    margin: auto;
+    margin-top: 30px;
+
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+main > p {
+    padding: 10px;
+
+    text-align: justify;
+    text-indent: 10px;
+}`, "",{"version":3,"sources":["webpack://./src/assets/css/style.css"],"names":[],"mappings":"AAAA,gBAAgB;;AAEhB;IACI,UAAU;IACV,SAAS;AACb;;AAEA;IACI,8CAA8C;;IAE9C,yBAAyB;AAC7B;;AAEA;IACI,aAAa;;IAEb,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;IAChB,UAAU;IACV,aAAa;;IAEb,YAAY;IACZ,gBAAgB;;IAEhB,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,aAAa;;IAEb,mBAAmB;IACnB,iBAAiB;AACrB","sourcesContent":["@charset \"UTF-8\";\r\n\r\n*{\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\nbody{\r\n    font-family: 'Courier New', Courier, monospace;\r\n\r\n    background-color: #c0f8de;\r\n}\r\n\r\nh1{\r\n    padding: 10px;\r\n\r\n    text-align: center;\r\n}\r\n\r\nmain{\r\n    max-width: 800px;\r\n    width: 80%;\r\n    height: 800px;\r\n    \r\n    margin: auto;\r\n    margin-top: 30px;\r\n\r\n    border-radius: 10px;\r\n    background-color: #fff;\r\n}\r\n\r\nmain > p {\r\n    padding: 10px;\r\n\r\n    text-align: justify;\r\n    text-indent: 10px;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
