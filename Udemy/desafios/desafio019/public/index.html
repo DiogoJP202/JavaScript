@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo</title>
+
+    <link rel="shortcut icon" href="assets/img/PassWordIco.ico" type="image/x-icon">
 </head>
 <body>
     <main>
-        <h1>Password Generator</h1>
-        <p>Select some options to increment your password that will be generated.</p>
-        <form action="#" method="get">
-            <label for="ICharacters">Amount of Characters: </label><input type="checkbox" name="ICharacters" id="ICharacters">
+        <h1>Gerador de Senhas</h1>
+        <h2>Selecione alguma opção</h2>
+        <form method="get" class="Form">
+            <label for="ICaracteres">Quantidade de caracteres <input type="number" name="Caracteres" id="ICaracteres" max="30" placeholder="Max 30"></label> <br>
+            <label for="Inumber">Adicionar Números <input type="checkbox" name="addNumber" id="IaddNumber"></label> <br>
+            <label for="IUpperCase">Adicionar Letras Maiúsculas <input type="checkbox" name="UpperCase" id="IUpperCase"></label> <br>
+            <label for="ILowerCase">Adicionar Letras Minúsculas <input type="checkbox" name="LowerCase" id="ILowerCase"></label> <br>
+            <label for="ISymbol">Adicionar Símbulos <input type="checkbox" name="Symbol" id="ISymbol"></label> <br>
+            <div class="btns">
+                <input type="submit" value="Gerar Senha"> <input type="reset" value="Limpar">
+            </div>
         </form>
+        
+        <div class="resposta">
+            <h3>!Senha Criada!</h3>
+            <p class="password">Loremipsumdolorsitametconsecteturadipisicingelit.Delectus iusto illo a repellendus, nisi repellat. Recusandae vel quod sequi beatae natus nisi. Natus, aut impedit? Aspernatur distinctio hic quo praesentium.</p>
+            <button class="copy"><strong>Clique Aqui</strong> para copiar</button>
+        </div>
     </main>
-
     <footer></footer>
     <script src="assets/js/bundle.js"></script>
 </body>

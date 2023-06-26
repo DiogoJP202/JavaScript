@@ -30,14 +30,29 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
 
 body{
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
 
-    background-color: #c0f8de;
+    background-color: #C3D2F4;
 }
 
 h1{
     padding: 10px;
-
+    
+    font-weight: bolder;
+    font-size: 2em;
     text-align: center;
+    text-shadow: 2px 2px 2px #fff;
+
+    border-radius: 9px 9px 0 0;
+    background-color: #e0e0e0;
+}
+
+h2{
+    padding: 10px;
+
+    font-size: 1.3em;
+    color: #5286ff;
+    text-align: left;
 }
 
 main{
@@ -48,6 +63,7 @@ main{
     margin: auto;
     margin-top: 30px;
 
+    box-shadow: 4px 4px 2px #b3b3b3;
     border-radius: 10px;
     background-color: #fff;
 }
@@ -57,7 +73,114 @@ main > p {
 
     text-align: justify;
     text-indent: 10px;
-}`, "",{"version":3,"sources":["webpack://./src/assets/css/style.css"],"names":[],"mappings":"AAAA,gBAAgB;;AAEhB;IACI,UAAU;IACV,SAAS;AACb;;AAEA;IACI,8CAA8C;;IAE9C,yBAAyB;AAC7B;;AAEA;IACI,aAAa;;IAEb,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;IAChB,UAAU;IACV,aAAa;;IAEb,YAAY;IACZ,gBAAgB;;IAEhB,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,aAAa;;IAEb,mBAAmB;IACnB,iBAAiB;AACrB","sourcesContent":["@charset \"UTF-8\";\r\n\r\n*{\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\nbody{\r\n    font-family: 'Courier New', Courier, monospace;\r\n\r\n    background-color: #c0f8de;\r\n}\r\n\r\nh1{\r\n    padding: 10px;\r\n\r\n    text-align: center;\r\n}\r\n\r\nmain{\r\n    max-width: 800px;\r\n    width: 80%;\r\n    height: 800px;\r\n    \r\n    margin: auto;\r\n    margin-top: 30px;\r\n\r\n    border-radius: 10px;\r\n    background-color: #fff;\r\n}\r\n\r\nmain > p {\r\n    padding: 10px;\r\n\r\n    text-align: justify;\r\n    text-indent: 10px;\r\n}"],"sourceRoot":""}]);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#ICaracteres{
+    width: 60px;
+}
+
+label{
+    display: block;
+    width: auto;
+
+    margin-left: 10px;
+    padding: 5px;
+
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+
+    border-radius: 10px;
+    background-color: #C3D2F4;
+}
+
+input[type=checkbox]{
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;    
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.btns > input{
+    width: 100px;
+    height: 30px;
+
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: bold;
+
+    box-shadow: 1px 1px 2px #000;
+    background-color: #C3D2F4;
+
+    transition: 0.5s;
+}
+
+.btns > input:hover{
+    color: #5286ff;
+
+    background-color: #ececec;
+
+    transform: scale(1.1);
+}
+
+.resposta{
+    display: none;
+    margin: 20px auto;
+}
+
+.password{
+    display: block;
+    width: 90%;
+
+    margin: 20px auto;
+    border: 1px solid #000;
+}
+
+.resposta > h3{
+    font-size: 1.5em;
+    color: #5286ff;
+    text-align: center;
+}
+
+.resposta > p{
+    word-wrap: break-word;
+}
+
+.copy{
+    display: block;
+    width: 200px;
+    height: 30px;
+
+    margin: auto;
+
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: bold;
+
+    box-shadow: 1px 1px 2px #000;
+    background-color: #C3D2F4;
+
+    transition: 0.5s;
+}
+
+.copy:hover{
+    color: #5286ff;
+
+    background-color: #ececec;
+
+    transform: scale(1.1);
+}`, "",{"version":3,"sources":["webpack://./src/assets/css/style.css"],"names":[],"mappings":"AAAA,gBAAgB;;AAEhB;IACI,UAAU;IACV,SAAS;AACb;;AAEA;IACI,8CAA8C;IAC9C,gBAAgB;;IAEhB,yBAAyB;AAC7B;;AAEA;IACI,aAAa;;IAEb,mBAAmB;IACnB,cAAc;IACd,kBAAkB;IAClB,6BAA6B;;IAE7B,0BAA0B;IAC1B,yBAAyB;AAC7B;;AAEA;IACI,aAAa;;IAEb,gBAAgB;IAChB,cAAc;IACd,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,UAAU;IACV,aAAa;;IAEb,YAAY;IACZ,gBAAgB;;IAEhB,+BAA+B;IAC/B,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,aAAa;;IAEb,mBAAmB;IACnB,iBAAiB;AACrB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;;IAEvB,cAAc;IACd,iBAAiB;AACrB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,cAAc;IACd,WAAW;;IAEX,iBAAiB;IACjB,YAAY;;IAEZ,WAAW;IACX,6BAA6B;;IAE7B,mBAAmB;IACnB,yBAAyB;AAC7B;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,aAAa;IACb,6BAA6B;IAC7B,WAAW;AACf;;AAEA;IACI,YAAY;IACZ,YAAY;;IAEZ,WAAW;IACX,gBAAgB;IAChB,iBAAiB;;IAEjB,4BAA4B;IAC5B,yBAAyB;;IAEzB,gBAAgB;AACpB;;AAEA;IACI,cAAc;;IAEd,yBAAyB;;IAEzB,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,iBAAiB;AACrB;;AAEA;IACI,cAAc;IACd,UAAU;;IAEV,iBAAiB;IACjB,sBAAsB;AAC1B;;AAEA;IACI,gBAAgB;IAChB,cAAc;IACd,kBAAkB;AACtB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,cAAc;IACd,YAAY;IACZ,YAAY;;IAEZ,YAAY;;IAEZ,WAAW;IACX,gBAAgB;IAChB,iBAAiB;;IAEjB,4BAA4B;IAC5B,yBAAyB;;IAEzB,gBAAgB;AACpB;;AAEA;IACI,cAAc;;IAEd,yBAAyB;;IAEzB,qBAAqB;AACzB","sourcesContent":["@charset \"UTF-8\";\r\n\r\n*{\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\nbody{\r\n    font-family: 'Courier New', Courier, monospace;\r\n    font-size: 1.1em;\r\n\r\n    background-color: #C3D2F4;\r\n}\r\n\r\nh1{\r\n    padding: 10px;\r\n    \r\n    font-weight: bolder;\r\n    font-size: 2em;\r\n    text-align: center;\r\n    text-shadow: 2px 2px 2px #fff;\r\n\r\n    border-radius: 9px 9px 0 0;\r\n    background-color: #e0e0e0;\r\n}\r\n\r\nh2{\r\n    padding: 10px;\r\n\r\n    font-size: 1.3em;\r\n    color: #5286ff;\r\n    text-align: left;\r\n}\r\n\r\nmain{\r\n    max-width: 800px;\r\n    width: 80%;\r\n    height: 800px;\r\n    \r\n    margin: auto;\r\n    margin-top: 30px;\r\n\r\n    box-shadow: 4px 4px 2px #b3b3b3;\r\n    border-radius: 10px;\r\n    background-color: #fff;\r\n}\r\n\r\nmain > p {\r\n    padding: 10px;\r\n\r\n    text-align: justify;\r\n    text-indent: 10px;\r\n}\r\n\r\nform{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n\r\n    font-size: 1em;\r\n    font-weight: bold;\r\n}\r\n\r\n#ICaracteres{\r\n    width: 60px;\r\n}\r\n\r\nlabel{\r\n    display: block;\r\n    width: auto;\r\n\r\n    margin-left: 10px;\r\n    padding: 5px;\r\n\r\n    color: #fff;\r\n    text-shadow: 1px 1px 1px #000;\r\n\r\n    border-radius: 10px;\r\n    background-color: #C3D2F4;\r\n}\r\n\r\ninput[type=checkbox]{\r\n    cursor: pointer;\r\n}\r\n\r\n.btns{\r\n    display: flex;    \r\n    justify-content: space-evenly;\r\n    width: 100%;\r\n}\r\n\r\n.btns > input{\r\n    width: 100px;\r\n    height: 30px;\r\n\r\n    color: #fff;\r\n    font-size: 0.8em;\r\n    font-weight: bold;\r\n\r\n    box-shadow: 1px 1px 2px #000;\r\n    background-color: #C3D2F4;\r\n\r\n    transition: 0.5s;\r\n}\r\n\r\n.btns > input:hover{\r\n    color: #5286ff;\r\n\r\n    background-color: #ececec;\r\n\r\n    transform: scale(1.1);\r\n}\r\n\r\n.resposta{\r\n    display: none;\r\n    margin: 20px auto;\r\n}\r\n\r\n.password{\r\n    display: block;\r\n    width: 90%;\r\n\r\n    margin: 20px auto;\r\n    border: 1px solid #000;\r\n}\r\n\r\n.resposta > h3{\r\n    font-size: 1.5em;\r\n    color: #5286ff;\r\n    text-align: center;\r\n}\r\n\r\n.resposta > p{\r\n    word-wrap: break-word;\r\n}\r\n\r\n.copy{\r\n    display: block;\r\n    width: 200px;\r\n    height: 30px;\r\n\r\n    margin: auto;\r\n\r\n    color: #fff;\r\n    font-size: 0.8em;\r\n    font-weight: bold;\r\n\r\n    box-shadow: 1px 1px 2px #000;\r\n    background-color: #C3D2F4;\r\n\r\n    transition: 0.5s;\r\n}\r\n\r\n.copy:hover{\r\n    color: #5286ff;\r\n\r\n    background-color: #ececec;\r\n\r\n    transform: scale(1.1);\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

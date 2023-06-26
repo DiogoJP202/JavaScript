@@ -7,14 +7,29 @@
 
 body{
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
 
-    background-color: #c0f8de;
+    background-color: #C3D2F4;
 }
 
 h1{
     padding: 10px;
-
+    
+    font-weight: bolder;
+    font-size: 2em;
     text-align: center;
+    text-shadow: 2px 2px 2px #fff;
+
+    border-radius: 9px 9px 0 0;
+    background-color: #e0e0e0;
+}
+
+h2{
+    padding: 10px;
+
+    font-size: 1.3em;
+    color: #5286ff;
+    text-align: left;
 }
 
 main{
@@ -25,6 +40,7 @@ main{
     margin: auto;
     margin-top: 30px;
 
+    box-shadow: 4px 4px 2px #b3b3b3;
     border-radius: 10px;
     background-color: #fff;
 }
@@ -34,4 +50,111 @@ main > p {
 
     text-align: justify;
     text-indent: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#ICaracteres{
+    width: 60px;
+}
+
+label{
+    display: block;
+    width: auto;
+
+    margin-left: 10px;
+    padding: 5px;
+
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+
+    border-radius: 10px;
+    background-color: #C3D2F4;
+}
+
+input[type=checkbox]{
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;    
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.btns > input{
+    width: 100px;
+    height: 30px;
+
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: bold;
+
+    box-shadow: 1px 1px 2px #000;
+    background-color: #C3D2F4;
+
+    transition: 0.5s;
+}
+
+.btns > input:hover{
+    color: #5286ff;
+
+    background-color: #ececec;
+
+    transform: scale(1.1);
+}
+
+.resposta{
+    display: none;
+    margin: 20px auto;
+}
+
+.password{
+    display: block;
+    width: 90%;
+
+    margin: 20px auto;
+    border: 1px solid #000;
+}
+
+.resposta > h3{
+    font-size: 1.5em;
+    color: #5286ff;
+    text-align: center;
+}
+
+.resposta > p{
+    word-wrap: break-word;
+}
+
+.copy{
+    display: block;
+    width: 200px;
+    height: 30px;
+
+    margin: auto;
+
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: bold;
+
+    box-shadow: 1px 1px 2px #000;
+    background-color: #C3D2F4;
+
+    transition: 0.5s;
+}
+
+.copy:hover{
+    color: #5286ff;
+
+    background-color: #ececec;
+
+    transform: scale(1.1);
 }
