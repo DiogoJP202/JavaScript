@@ -103,4 +103,10 @@ document.addEventListener('click', (event) => {
     if(element.classList.contains('limpar')){
         pass.cleanAll();
     }
+
+    // if(element.classList.contains('copy')){
+    //     pass.senha.select();
+    //     pass.senha.setSelectionRange(0, 99999)
+    //     document.execCommand("copy");
+    // }
 });
