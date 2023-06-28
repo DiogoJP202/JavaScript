@@ -11,16 +11,16 @@
     <main>
         <h1>Gerador de Senhas</h1>
         <h2>Selecione alguma opção</h2>
-        <form method="get" class="Form">
-            <label for="ICaracteres">Quantidade de caracteres <input type="number" name="Caracteres" id="ICaracteres" max="30" placeholder="Max 30" required></label> <br>
-            <label for="Inumber">Adicionar Números <input type="checkbox" name="addNumber" id="IaddNumber"></label> <br>
-            <label for="IUpperCase">Adicionar Letras Maiúsculas <input type="checkbox" name="UpperCase" id="IUpperCase"></label> <br>
-            <label for="ILowerCase">Adicionar Letras Minúsculas <input type="checkbox" name="LowerCase" id="ILowerCase"></label> <br>
-            <label for="ISymbol">Adicionar Símbulos <input type="checkbox" name="Symbol" id="ISymbol"></label> <br>
+        <div class="form">
+            <div for="ICaracteres" class="label">Quantidade de caracteres <input type="number" name="Caracteres" id="ICaracteres" placeholder="Max 1000" required></div> <br>
+            <div for="Inumber" class="label">Adicionar Números <input type="checkbox" name="addNumber" id="IaddNumber"></div> <br>
+            <div for="IUpperCase" class="label">Adicionar Letras Maiúsculas <input type="checkbox" name="UpperCase" id="IUpperCase"></div> <br>
+            <div for="ILowerCase" class="label">Adicionar Letras Minúsculas <input type="checkbox" name="LowerCase" id="ILowerCase"></div> <br>
+            <div for="ISymbol" class="label">Adicionar Símbulos <input type="checkbox" name="Symbol" id="ISymbol"></div> <br>
             <div class="btns">
-                <input type="submit" value="Gerar Senha"> <input type="reset" value="Limpar">
+                <input type="submit" value="Gerar Senha" class="enviar"> <input type="reset" value="Limpar" class="limpar">
             </div>
-        </form>
+        </div>
         
         <div class="resposta">
             <h3>!Senha Criada!</h3>

@@ -58,10 +58,11 @@ h2{
 main{
     max-width: 800px;
     width: 80%;
-    height: 800px;
+    height: auto;
     
     margin: auto;
     margin-top: 30px;
+    padding-bottom: 30px;
 
     box-shadow: 4px 4px 2px #b3b3b3;
     border-radius: 10px;
@@ -75,7 +76,7 @@ main > p {
     text-indent: 10px;
 }
 
-form{
+.form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -85,10 +86,10 @@ form{
 }
 
 #ICaracteres{
-    width: 60px;
+    width: 100px;
 }
 
-label{
+.label{
     display: block;
     width: auto;
 
@@ -144,7 +145,7 @@ input[type=checkbox]{
     width: 90%;
 
     margin: 20px auto;
-    border: 1px solid #000;
+    border: 2px solid #C3D2F4;
 }
 
 .resposta > h3{
@@ -155,6 +156,9 @@ input[type=checkbox]{
 
 .resposta > p{
     word-wrap: break-word;
+    font-weight: 600;
+    text-align: left;
+    font-size: .9em;
 }
 
 .copy{
@@ -180,7 +184,17 @@ input[type=checkbox]{
     background-color: #ececec;
 
     transform: scale(1.1);
-}`, "",{"version":3,"sources":["webpack://./src/assets/css/style.css"],"names":[],"mappings":"AAAA,gBAAgB;;AAEhB;IACI,UAAU;IACV,SAAS;AACb;;AAEA;IACI,8CAA8C;IAC9C,gBAAgB;;IAEhB,yBAAyB;AAC7B;;AAEA;IACI,aAAa;;IAEb,mBAAmB;IACnB,cAAc;IACd,kBAAkB;IAClB,6BAA6B;;IAE7B,0BAA0B;IAC1B,yBAAyB;AAC7B;;AAEA;IACI,aAAa;;IAEb,gBAAgB;IAChB,cAAc;IACd,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,UAAU;IACV,aAAa;;IAEb,YAAY;IACZ,gBAAgB;;IAEhB,+BAA+B;IAC/B,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,aAAa;;IAEb,mBAAmB;IACnB,iBAAiB;AACrB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;;IAEvB,cAAc;IACd,iBAAiB;AACrB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,cAAc;IACd,WAAW;;IAEX,iBAAiB;IACjB,YAAY;;IAEZ,WAAW;IACX,6BAA6B;;IAE7B,mBAAmB;IACnB,yBAAyB;AAC7B;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,aAAa;IACb,6BAA6B;IAC7B,WAAW;AACf;;AAEA;IACI,YAAY;IACZ,YAAY;;IAEZ,WAAW;IACX,gBAAgB;IAChB,iBAAiB;;IAEjB,4BAA4B;IAC5B,yBAAyB;;IAEzB,gBAAgB;AACpB;;AAEA;IACI,cAAc;;IAEd,yBAAyB;;IAEzB,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,iBAAiB;AACrB;;AAEA;IACI,cAAc;IACd,UAAU;;IAEV,iBAAiB;IACjB,sBAAsB;AAC1B;;AAEA;IACI,gBAAgB;IAChB,cAAc;IACd,kBAAkB;AACtB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,cAAc;IACd,YAAY;IACZ,YAAY;;IAEZ,YAAY;;IAEZ,WAAW;IACX,gBAAgB;IAChB,iBAAiB;;IAEjB,4BAA4B;IAC5B,yBAAyB;;IAEzB,gBAAgB;AACpB;;AAEA;IACI,cAAc;;IAEd,yBAAyB;;IAEzB,qBAAqB;AACzB","sourcesContent":["@charset \"UTF-8\";\r\n\r\n*{\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\nbody{\r\n    font-family: 'Courier New', Courier, monospace;\r\n    font-size: 1.1em;\r\n\r\n    background-color: #C3D2F4;\r\n}\r\n\r\nh1{\r\n    padding: 10px;\r\n    \r\n    font-weight: bolder;\r\n    font-size: 2em;\r\n    text-align: center;\r\n    text-shadow: 2px 2px 2px #fff;\r\n\r\n    border-radius: 9px 9px 0 0;\r\n    background-color: #e0e0e0;\r\n}\r\n\r\nh2{\r\n    padding: 10px;\r\n\r\n    font-size: 1.3em;\r\n    color: #5286ff;\r\n    text-align: left;\r\n}\r\n\r\nmain{\r\n    max-width: 800px;\r\n    width: 80%;\r\n    height: 800px;\r\n    \r\n    margin: auto;\r\n    margin-top: 30px;\r\n\r\n    box-shadow: 4px 4px 2px #b3b3b3;\r\n    border-radius: 10px;\r\n    background-color: #fff;\r\n}\r\n\r\nmain > p {\r\n    padding: 10px;\r\n\r\n    text-align: justify;\r\n    text-indent: 10px;\r\n}\r\n\r\nform{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n\r\n    font-size: 1em;\r\n    font-weight: bold;\r\n}\r\n\r\n#ICaracteres{\r\n    width: 60px;\r\n}\r\n\r\nlabel{\r\n    display: block;\r\n    width: auto;\r\n\r\n    margin-left: 10px;\r\n    padding: 5px;\r\n\r\n    color: #fff;\r\n    text-shadow: 1px 1px 1px #000;\r\n\r\n    border-radius: 10px;\r\n    background-color: #C3D2F4;\r\n}\r\n\r\ninput[type=checkbox]{\r\n    cursor: pointer;\r\n}\r\n\r\n.btns{\r\n    display: flex;    \r\n    justify-content: space-evenly;\r\n    width: 100%;\r\n}\r\n\r\n.btns > input{\r\n    width: 100px;\r\n    height: 30px;\r\n\r\n    color: #fff;\r\n    font-size: 0.8em;\r\n    font-weight: bold;\r\n\r\n    box-shadow: 1px 1px 2px #000;\r\n    background-color: #C3D2F4;\r\n\r\n    transition: 0.5s;\r\n}\r\n\r\n.btns > input:hover{\r\n    color: #5286ff;\r\n\r\n    background-color: #ececec;\r\n\r\n    transform: scale(1.1);\r\n}\r\n\r\n.resposta{\r\n    display: none;\r\n    margin: 20px auto;\r\n}\r\n\r\n.password{\r\n    display: block;\r\n    width: 90%;\r\n\r\n    margin: 20px auto;\r\n    border: 1px solid #000;\r\n}\r\n\r\n.resposta > h3{\r\n    font-size: 1.5em;\r\n    color: #5286ff;\r\n    text-align: center;\r\n}\r\n\r\n.resposta > p{\r\n    word-wrap: break-word;\r\n}\r\n\r\n.copy{\r\n    display: block;\r\n    width: 200px;\r\n    height: 30px;\r\n\r\n    margin: auto;\r\n\r\n    color: #fff;\r\n    font-size: 0.8em;\r\n    font-weight: bold;\r\n\r\n    box-shadow: 1px 1px 2px #000;\r\n    background-color: #C3D2F4;\r\n\r\n    transition: 0.5s;\r\n}\r\n\r\n.copy:hover{\r\n    color: #5286ff;\r\n\r\n    background-color: #ececec;\r\n\r\n    transform: scale(1.1);\r\n}"],"sourceRoot":""}]);
+}
+
+.alert{
+    display: block;
+
+    text-shadow: -1px 2px 2px #000;
+    text-align: center;
+    font-size: 1.4em;
+    color: #f00;
+    
+}`, "",{"version":3,"sources":["webpack://./src/assets/css/style.css"],"names":[],"mappings":"AAAA,gBAAgB;;AAEhB;IACI,UAAU;IACV,SAAS;AACb;;AAEA;IACI,8CAA8C;IAC9C,gBAAgB;;IAEhB,yBAAyB;AAC7B;;AAEA;IACI,aAAa;;IAEb,mBAAmB;IACnB,cAAc;IACd,kBAAkB;IAClB,6BAA6B;;IAE7B,0BAA0B;IAC1B,yBAAyB;AAC7B;;AAEA;IACI,aAAa;;IAEb,gBAAgB;IAChB,cAAc;IACd,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,UAAU;IACV,YAAY;;IAEZ,YAAY;IACZ,gBAAgB;IAChB,oBAAoB;;IAEpB,+BAA+B;IAC/B,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,aAAa;;IAEb,mBAAmB;IACnB,iBAAiB;AACrB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;;IAEvB,cAAc;IACd,iBAAiB;AACrB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,cAAc;IACd,WAAW;;IAEX,iBAAiB;IACjB,YAAY;;IAEZ,WAAW;IACX,6BAA6B;;IAE7B,mBAAmB;IACnB,yBAAyB;AAC7B;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,aAAa;IACb,6BAA6B;IAC7B,WAAW;AACf;;AAEA;IACI,YAAY;IACZ,YAAY;;IAEZ,WAAW;IACX,gBAAgB;IAChB,iBAAiB;;IAEjB,4BAA4B;IAC5B,yBAAyB;;IAEzB,gBAAgB;AACpB;;AAEA;IACI,cAAc;;IAEd,yBAAyB;;IAEzB,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,iBAAiB;AACrB;;AAEA;IACI,cAAc;IACd,UAAU;;IAEV,iBAAiB;IACjB,yBAAyB;AAC7B;;AAEA;IACI,gBAAgB;IAChB,cAAc;IACd,kBAAkB;AACtB;;AAEA;IACI,qBAAqB;IACrB,gBAAgB;IAChB,gBAAgB;IAChB,eAAe;AACnB;;AAEA;IACI,cAAc;IACd,YAAY;IACZ,YAAY;;IAEZ,YAAY;;IAEZ,WAAW;IACX,gBAAgB;IAChB,iBAAiB;;IAEjB,4BAA4B;IAC5B,yBAAyB;;IAEzB,gBAAgB;AACpB;;AAEA;IACI,cAAc;;IAEd,yBAAyB;;IAEzB,qBAAqB;AACzB;;AAEA;IACI,cAAc;;IAEd,8BAA8B;IAC9B,kBAAkB;IAClB,gBAAgB;IAChB,WAAW;;AAEf","sourcesContent":["@charset \"UTF-8\";\r\n\r\n*{\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\nbody{\r\n    font-family: 'Courier New', Courier, monospace;\r\n    font-size: 1.1em;\r\n\r\n    background-color: #C3D2F4;\r\n}\r\n\r\nh1{\r\n    padding: 10px;\r\n    \r\n    font-weight: bolder;\r\n    font-size: 2em;\r\n    text-align: center;\r\n    text-shadow: 2px 2px 2px #fff;\r\n\r\n    border-radius: 9px 9px 0 0;\r\n    background-color: #e0e0e0;\r\n}\r\n\r\nh2{\r\n    padding: 10px;\r\n\r\n    font-size: 1.3em;\r\n    color: #5286ff;\r\n    text-align: left;\r\n}\r\n\r\nmain{\r\n    max-width: 800px;\r\n    width: 80%;\r\n    height: auto;\r\n    \r\n    margin: auto;\r\n    margin-top: 30px;\r\n    padding-bottom: 30px;\r\n\r\n    box-shadow: 4px 4px 2px #b3b3b3;\r\n    border-radius: 10px;\r\n    background-color: #fff;\r\n}\r\n\r\nmain > p {\r\n    padding: 10px;\r\n\r\n    text-align: justify;\r\n    text-indent: 10px;\r\n}\r\n\r\n.form{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n\r\n    font-size: 1em;\r\n    font-weight: bold;\r\n}\r\n\r\n#ICaracteres{\r\n    width: 100px;\r\n}\r\n\r\n.label{\r\n    display: block;\r\n    width: auto;\r\n\r\n    margin-left: 10px;\r\n    padding: 5px;\r\n\r\n    color: #fff;\r\n    text-shadow: 1px 1px 1px #000;\r\n\r\n    border-radius: 10px;\r\n    background-color: #C3D2F4;\r\n}\r\n\r\ninput[type=checkbox]{\r\n    cursor: pointer;\r\n}\r\n\r\n.btns{\r\n    display: flex;    \r\n    justify-content: space-evenly;\r\n    width: 100%;\r\n}\r\n\r\n.btns > input{\r\n    width: 100px;\r\n    height: 30px;\r\n\r\n    color: #fff;\r\n    font-size: 0.8em;\r\n    font-weight: bold;\r\n\r\n    box-shadow: 1px 1px 2px #000;\r\n    background-color: #C3D2F4;\r\n\r\n    transition: 0.5s;\r\n}\r\n\r\n.btns > input:hover{\r\n    color: #5286ff;\r\n\r\n    background-color: #ececec;\r\n\r\n    transform: scale(1.1);\r\n}\r\n\r\n.resposta{\r\n    display: none;\r\n    margin: 20px auto;\r\n}\r\n\r\n.password{\r\n    display: block;\r\n    width: 90%;\r\n\r\n    margin: 20px auto;\r\n    border: 2px solid #C3D2F4;\r\n}\r\n\r\n.resposta > h3{\r\n    font-size: 1.5em;\r\n    color: #5286ff;\r\n    text-align: center;\r\n}\r\n\r\n.resposta > p{\r\n    word-wrap: break-word;\r\n    font-weight: 600;\r\n    text-align: left;\r\n    font-size: .9em;\r\n}\r\n\r\n.copy{\r\n    display: block;\r\n    width: 200px;\r\n    height: 30px;\r\n\r\n    margin: auto;\r\n\r\n    color: #fff;\r\n    font-size: 0.8em;\r\n    font-weight: bold;\r\n\r\n    box-shadow: 1px 1px 2px #000;\r\n    background-color: #C3D2F4;\r\n\r\n    transition: 0.5s;\r\n}\r\n\r\n.copy:hover{\r\n    color: #5286ff;\r\n\r\n    background-color: #ececec;\r\n\r\n    transform: scale(1.1);\r\n}\r\n\r\n.alert{\r\n    display: block;\r\n\r\n    text-shadow: -1px 2px 2px #000;\r\n    text-align: center;\r\n    font-size: 1.4em;\r\n    color: #f00;\r\n    \r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -718,23 +732,105 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 var Password = /*#__PURE__*/function () {
   function Password() {
     _classCallCheck(this, Password);
-    this.form = document.querySelector('form');
+    this.resp = document.querySelector('.resposta');
+    this.random = function (array) {
+      return array[Math.floor(Math.random() * array.length)];
+    };
+    this.cAlert = 0;
+    this.senha = '';
   }
   _createClass(Password, [{
+    key: "createAlert",
+    value: function createAlert(text) {
+      var main = document.querySelector('main');
+      var p = document.createElement('p');
+      p.classList.add('alert');
+      p.innerHTML = "<strong>".concat(text, "</strong>");
+      main.appendChild(p);
+    }
+  }, {
     key: "createPassword",
-    value: function createPassword(character, number, upperCase, lowerCase, symbol) {}
+    value: function createPassword(character, number, upperCase, lowerCase, symbol) {
+      this.senha = '';
+      for (this.senha.length; this.senha.length <= character;) {
+        if (number === true) this.geraNumeros();
+        if (upperCase === true) this.geraLetrasMaiúsculas();
+        if (lowerCase === true) this.geraLetrasMinúsculas();
+        if (symbol === true) this.geraSimbulos();
+      }
+      document.querySelector('.password').innerHTML = "".concat(this.senha);
+      this.resp.style.display = "block";
+    }
+  }, {
+    key: "geraNumeros",
+    value: function geraNumeros() {
+      var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+      return this.senha += this.random(numbers);
+    }
+  }, {
+    key: "geraLetrasMai\xFAsculas",
+    value: function geraLetrasMaiúsculas() {
+      var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+      return this.senha += this.random(alphabet);
+    }
+  }, {
+    key: "geraLetrasMin\xFAsculas",
+    value: function geraLetrasMinúsculas() {
+      var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+      return this.senha += this.random(alphabet);
+    }
+  }, {
+    key: "geraSimbulos",
+    value: function geraSimbulos() {
+      var simbulos = [' ', '!', '”', '#', '$', '%', '&', '`', '(', ')', '*', '+', '\'', '\'', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~'];
+      return this.senha += this.random(simbulos);
+    }
+  }, {
+    key: "cleanAll",
+    value: function cleanAll() {
+      this.senha = '';
+      this.resp.style.display = "none";
+      if (pass.cAlert === 1) {
+        document.querySelector('.alert').remove();
+        pass.cAlert = 0;
+      }
+      document.querySelector('#ICaracteres').value = 0;
+      document.querySelector('#IaddNumber').checked = false;
+      document.querySelector('#IUpperCase').checked = false;
+      document.querySelector('#ILowerCase').checked = false;
+      document.querySelector('#ISymbol').checked = false;
+    }
   }]);
   return Password;
 }();
 var pass = new Password();
-pass.form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  var inputCharacter = document.querySelector('#ICaracteres');
-  var inputNumber = document.querySelector('#IaddNumber');
-  var inputUpperCase = document.querySelector('#IUpperCase');
-  var inputLowerCase = document.querySelector('#ILowerCase');
-  var inputSymbol = document.querySelector('#ISymbol');
-  pass.createPassword(inputCharacter.value, inputNumber.value, inputUpperCase.value, inputLowerCase.value, inputSymbol.value);
+document.addEventListener('click', function (event) {
+  var element = event.target;
+  if (element.classList.contains('enviar')) {
+    var maxCharacter = document.querySelector('#ICaracteres');
+    var inputNumber = document.querySelector('#IaddNumber');
+    var inputUpperCase = document.querySelector('#IUpperCase');
+    var inputLowerCase = document.querySelector('#ILowerCase');
+    var inputSymbol = document.querySelector('#ISymbol');
+    if (pass.cAlert === 1) {
+      document.querySelector('.alert').remove();
+      pass.cAlert = 0;
+    }
+    if (Number(maxCharacter.value) <= 0 || Number(maxCharacter.value) > 1000) {
+      pass.resp.style.display = "none";
+      pass.createAlert('Pelo menos 1 caractere e no máximo 1000.');
+      pass.cAlert++;
+    } else if (inputNumber.checked === false && inputLowerCase.checked === false && inputUpperCase.checked === false && inputSymbol.checked === false) {
+      pass.resp.style.display = "none";
+      pass.createAlert('Marque pelo menos uma caixa!');
+      pass.cAlert++;
+    } else {
+      pass.createPassword(Number(maxCharacter.value), inputNumber.checked, inputUpperCase.checked, inputLowerCase.checked, inputSymbol.checked);
+    }
+  }
+  if (element.classList.contains('limpar')) {
+    pass.cleanAll();
+  }
 });
 })();
 

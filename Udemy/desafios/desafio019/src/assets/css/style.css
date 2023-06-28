@@ -35,10 +35,11 @@ h2{
 main{
     max-width: 800px;
     width: 80%;
-    height: 800px;
+    height: auto;
     
     margin: auto;
     margin-top: 30px;
+    padding-bottom: 30px;
 
     box-shadow: 4px 4px 2px #b3b3b3;
     border-radius: 10px;
@@ -52,7 +53,7 @@ main > p {
     text-indent: 10px;
 }
 
-form{
+.form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -62,10 +63,10 @@ form{
 }
 
 #ICaracteres{
-    width: 60px;
+    width: 100px;
 }
 
-label{
+.label{
     display: block;
     width: auto;
 
@@ -121,7 +122,7 @@ input[type=checkbox]{
     width: 90%;
 
     margin: 20px auto;
-    border: 1px solid #000;
+    border: 2px solid #C3D2F4;
 }
 
 .resposta > h3{
@@ -132,6 +133,9 @@ input[type=checkbox]{
 
 .resposta > p{
     word-wrap: break-word;
+    font-weight: 600;
+    text-align: left;
+    font-size: .9em;
 }
 
 .copy{
@@ -157,4 +161,14 @@ input[type=checkbox]{
     background-color: #ececec;
 
     transform: scale(1.1);
+}
+
+.alert{
+    display: block;
+
+    text-shadow: -1px 2px 2px #000;
+    text-align: center;
+    font-size: 1.4em;
+    color: #f00;
+    
 }
