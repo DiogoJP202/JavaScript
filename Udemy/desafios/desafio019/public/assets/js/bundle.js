@@ -72,9 +72,9 @@ var Password = /*#__PURE__*/function () {
     value: function cleanAll() {
       this.senha = '';
       this.resp.style.display = "none";
-      if (pass.cAlert === 1) {
+      if (this.cAlert === 1) {
         document.querySelector('.alert').remove();
-        pass.cAlert = 0;
+        this.cAlert = 0;
       }
       document.querySelector('#ICaracteres').value = 0;
       document.querySelector('#IaddNumber').checked = false;
