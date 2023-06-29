@@ -2,6 +2,93 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/modules/passwordClass.js":
+/*!**************************************!*\
+  !*** ./src/modules/passwordClass.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Password)
+/* harmony export */ });
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Password = /*#__PURE__*/function () {
+  function Password() {
+    var _this = this;
+    _classCallCheck(this, Password);
+    _defineProperty(this, "geraNumeros", function () {
+      return _this.senha += String.fromCharCode(_this.random(48, 57));
+    });
+    _defineProperty(this, "geraLetrasMai\xFAsculas", function () {
+      return _this.senha += String.fromCharCode(_this.random(65, 90));
+    });
+    _defineProperty(this, "geraLetrasMin\xFAsculas", function () {
+      return _this.senha += String.fromCharCode(_this.random(97, 122));
+    });
+    this.resp = document.querySelector('.resposta');
+    this.random = function (min, max) {
+      return Math.floor(Math.random() * (max - min) + min);
+    };
+    this.cAlert = 0;
+    this.senha = '';
+  }
+  _createClass(Password, [{
+    key: "createAlert",
+    value: function createAlert(text) {
+      var main = document.querySelector('main');
+      var p = document.createElement('p');
+      p.classList.add('alert');
+      p.innerHTML = "<strong>".concat(text, "</strong>");
+      main.appendChild(p);
+    }
+  }, {
+    key: "createPassword",
+    value: function createPassword(character, number, upperCase, lowerCase, symbol) {
+      this.senha = '';
+      for (this.senha.length; this.senha.length <= character;) {
+        number === true && this.geraNumeros();
+        upperCase === true && this.geraLetrasMaiúsculas();
+        lowerCase === true && this.geraLetrasMinúsculas();
+        symbol === true && this.geraSimbulos();
+      }
+      document.querySelector('.password').innerHTML = "".concat(this.senha);
+      this.resp.style.display = "block";
+    }
+  }, {
+    key: "geraSimbulos",
+    value: function geraSimbulos() {
+      var simbulos = [' ', '!', '"', '#', '$', '%', '&', '`', '(', ')', '*', '+', '\'', '\'', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~'];
+      return this.senha += simbulos[this.random(0, simbulos.length)];
+    }
+  }, {
+    key: "cleanAll",
+    value: function cleanAll() {
+      this.senha = '';
+      this.resp.style.display = "none";
+      if (pass.cAlert === 1) {
+        document.querySelector('.alert').remove();
+        pass.cAlert = 0;
+      }
+      document.querySelector('#ICaracteres').value = 0;
+      document.querySelector('#IaddNumber').checked = false;
+      document.querySelector('#IUpperCase').checked = false;
+      document.querySelector('#ILowerCase').checked = false;
+      document.querySelector('#ISymbol').checked = false;
+    }
+  }]);
+  return Password;
+}();
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/assets/css/style.css":
 /*!************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/assets/css/style.css ***!
@@ -725,92 +812,14 @@ var __webpack_exports__ = {};
   \*********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/style.css */ "./src/assets/css/style.css");
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+/* harmony import */ var _modules_passwordClass_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/passwordClass.js */ "./src/modules/passwordClass.js");
 
-var Password = /*#__PURE__*/function () {
-  function Password() {
-    _classCallCheck(this, Password);
-    this.resp = document.querySelector('.resposta');
-    this.random = function (array) {
-      return array[Math.floor(Math.random() * array.length)];
-    };
-    this.cAlert = 0;
-    this.senha = '';
-  }
-  _createClass(Password, [{
-    key: "createAlert",
-    value: function createAlert(text) {
-      var main = document.querySelector('main');
-      var p = document.createElement('p');
-      p.classList.add('alert');
-      p.innerHTML = "<strong>".concat(text, "</strong>");
-      main.appendChild(p);
-    }
-  }, {
-    key: "createPassword",
-    value: function createPassword(character, number, upperCase, lowerCase, symbol) {
-      this.senha = '';
-      for (this.senha.length; this.senha.length <= character;) {
-        if (number === true) this.geraNumeros();
-        if (upperCase === true) this.geraLetrasMaiúsculas();
-        if (lowerCase === true) this.geraLetrasMinúsculas();
-        if (symbol === true) this.geraSimbulos();
-      }
-      document.querySelector('.password').innerHTML = "".concat(this.senha);
-      this.resp.style.display = "block";
-    }
-  }, {
-    key: "geraNumeros",
-    value: function geraNumeros() {
-      var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-      return this.senha += this.random(numbers);
-    }
-  }, {
-    key: "geraLetrasMai\xFAsculas",
-    value: function geraLetrasMaiúsculas() {
-      var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-      return this.senha += this.random(alphabet);
-    }
-  }, {
-    key: "geraLetrasMin\xFAsculas",
-    value: function geraLetrasMinúsculas() {
-      var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-      return this.senha += this.random(alphabet);
-    }
-  }, {
-    key: "geraSimbulos",
-    value: function geraSimbulos() {
-      var simbulos = [' ', '!', '”', '#', '$', '%', '&', '`', '(', ')', '*', '+', '\'', '\'', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~'];
-      return this.senha += this.random(simbulos);
-    }
-  }, {
-    key: "cleanAll",
-    value: function cleanAll() {
-      this.senha = '';
-      this.resp.style.display = "none";
-      if (pass.cAlert === 1) {
-        document.querySelector('.alert').remove();
-        pass.cAlert = 0;
-      }
-      document.querySelector('#ICaracteres').value = 0;
-      document.querySelector('#IaddNumber').checked = false;
-      document.querySelector('#IUpperCase').checked = false;
-      document.querySelector('#ILowerCase').checked = false;
-      document.querySelector('#ISymbol').checked = false;
-    }
-  }]);
-  return Password;
-}();
-var pass = new Password();
+
+var pass = new _modules_passwordClass_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
 document.addEventListener('click', function (event) {
   var element = event.target;
   if (element.classList.contains('enviar')) {
-    var maxCharacter = document.querySelector('#ICaracteres');
+    var maxCharacter = Number(document.querySelector('#ICaracteres').value);
     var inputNumber = document.querySelector('#IaddNumber');
     var inputUpperCase = document.querySelector('#IUpperCase');
     var inputLowerCase = document.querySelector('#ILowerCase');
@@ -819,21 +828,21 @@ document.addEventListener('click', function (event) {
       document.querySelector('.alert').remove();
       pass.cAlert = 0;
     }
-    if (Number(maxCharacter.value) <= 0 || Number(maxCharacter.value) > 1000) {
+    if (maxCharacter <= 0 || maxCharacter > 1000) {
       pass.resp.style.display = "none";
       pass.createAlert('Pelo menos 1 caractere e no máximo 1000.');
       pass.cAlert++;
-    } else if (inputNumber.checked === false && inputLowerCase.checked === false && inputUpperCase.checked === false && inputSymbol.checked === false) {
+      return;
+    }
+    if (inputNumber.checked === false && inputLowerCase.checked === false && inputUpperCase.checked === false && inputSymbol.checked === false) {
       pass.resp.style.display = "none";
       pass.createAlert('Marque pelo menos uma caixa!');
       pass.cAlert++;
-    } else {
-      pass.createPassword(Number(maxCharacter.value), inputNumber.checked, inputUpperCase.checked, inputLowerCase.checked, inputSymbol.checked);
+      return;
     }
+    pass.createPassword(maxCharacter, inputNumber.checked, inputUpperCase.checked, inputLowerCase.checked, inputSymbol.checked);
   }
-  if (element.classList.contains('limpar')) {
-    pass.cleanAll();
-  }
+  element.classList.contains('limpar') && pass.cleanAll();
 
   // if(element.classList.contains('copy')){
   //     pass.senha.select();
