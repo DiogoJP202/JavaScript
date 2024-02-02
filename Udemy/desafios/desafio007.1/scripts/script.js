@@ -8,6 +8,7 @@ form.addEventListener('submit', function (event)//nesse caso, eu não consigo ch
   const valorPeso = Number(inputPeso.value);
   const valorAltura = Number(inputAltura.value);
   console.log("chegou aqui")
+
   if(!valorPeso || !valorAltura){
     setResultado('Valor Inválido!', false);
     return;
@@ -43,7 +44,7 @@ function getIMC(Peso, Altura){
 }
 
 function getNivelIMC(IMC){
-  const nivel = ['Abaixo do peso.','Peso normal.','Sobrepeso.','Obesidade grau 1.','Obesidade grau 2.','Obesidade grau 3.']
+  const nivel = ['Abaixo do peso','Peso normal','Sobrepeso','Obesidade grau 1','Obesidade grau 2','Obesidade grau 3']
     if(IMC >= 39.9) return nivel[5];
     if(IMC >= 34.9) return nivel[4];
     if(IMC >= 29.9) return nivel[3]; 

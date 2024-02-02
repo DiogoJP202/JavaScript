@@ -19,12 +19,9 @@ for(let chave in numeros){
         console.log(`Valor ${numeros[chave]} da chave ${chave}.`) 
     }
 }
-let Cadeira_01 = 'vazia'
-let Cadeira_02 = 'ocupada'
-let Cadeira_03 = 'vazia'
-let Cadeira_04 = 'ocupada'
-let Cadeira_05 = 'ocupada'
-let Cadeiras = [Cadeira_01,Cadeira_02,Cadeira_03,Cadeira_04,Cadeira_05]
+[Cadeira_01, Cadeira_02, Cadeira_03, Cadeira_04, Cadeira_05] = ['vazia', 'ocupada', 'vazia', 'ocupada', 'ocupada']
+
+let Cadeiras = [Cadeira_01, Cadeira_02, Cadeira_03, Cadeira_04, Cadeira_05]
 for(let PosiçãoDeCadeira = 0; PosiçãoDeCadeira < Cadeiras.length ; PosiçãoDeCadeira++){
     console.log(`A cadeira ${PosiçãoDeCadeira +1} está ${Cadeiras[PosiçãoDeCadeira]}!`)
 }
